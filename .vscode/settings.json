@@ -5,13 +5,13 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "typescript.tsdk": "node_modules/typescript/lib",
-  "tslint.autoFixOnSave": true,
-  "tslint.configFile": "client/tslint.json",
+  // "typescript.tsdk": "node_modules/typescript/lib",
+  // "tslint.autoFixOnSave": true,
+  // "tslint.configFile": "client/tslint.json",
   "[plaintext]": {
     "files.insertFinalNewline": false
   },
-  "commentTranslate.targetLanguage": "zh",
+  "commentTranslate.targetLanguage": "zh-CN",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "cSpell.words": ["defaultify"]
 }

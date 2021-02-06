@@ -17,7 +17,6 @@ export default function HookRefs(props) {
       {/* <FormDemo ref={ myRef }/> */}
       <FunctionComponent title="啦啦啦" ref={myRef} />
       {/* <FunctionComponent title='123啦啦' ref={ hookRef }/> */}
-      <ClassComponent title="123啦啦" ref={hookRef} />
     </div>
   )
 }

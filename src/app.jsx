@@ -3,19 +3,21 @@ import ComponentLife from './ComponentLife'
 import FormDemo from './FormDemo'
 import RefsForm from './RefsForm'
 import HookRefs from './HookRefs'
+import FetchDemo from './FetchDemo'
 
-class App extends React.Component{
+class App extends React.Component {
   constructor(props) {
     super(props)
   }
 
   render() {
-    return(
+    return (
       <>
         {/* <ComponentLife title='123' /> */}
         {/* <FormDemo/> */}
         {/* <RefsForm/> */}
-        <HookRefs/>
+        {/* <HookRefs/> */}
+        <FetchDemo />
       </>
     )
   }
