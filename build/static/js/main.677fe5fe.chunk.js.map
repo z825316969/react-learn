@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["ReactDOM","render","document","getElementById"],"mappings":"6KAGAA,EAASC,OACP,2CAGAC,SAASC,eAAe,W","file":"static/js/main.677fe5fe.chunk.js","sourcesContent":["import React from 'react'\nimport ReactDOM from 'react-dom'\n\nReactDOM.render(\n  <>\n    123\n  </>,\n  document.getElementById('root')\n);\n"],"sourceRoot":""}

@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-bilibili-example"]=this["webpackJsonpreact-bilibili-example"]||[]).push([[0],{4:function(e,i,t){"use strict";t.r(i);var n=t(0),r=(t(2),t(3));t.n(r).a.render(Object(n.jsx)(n.Fragment,{children:"123"}),document.getElementById("root"))}},[[4,1,2]]]);
+//# sourceMappingURL=main.677fe5fe.chunk.js.map
