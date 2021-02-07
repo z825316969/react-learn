@@ -1,0 +1,21 @@
+{
+  "init_component": {
+    "prefix": "rinit",
+    "body": [
+      "import React, { useState, useEffect } from 'react'",
+      "import PropTypes from 'prop-types'",
+      "import styled from 'styled-components'",
+      "",
+      "const Wrapper = styled.div``",
+      "",
+      "$0.PropTypes = {}",
+      "",
+      "$0.defaultProps = {}",
+      "",
+      "export default function $0() {",
+      "",
+      "   return <Wrapper></Wrapper>",
+      "}"
+    ]
+  }
+}

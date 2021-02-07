@@ -5,13 +5,20 @@
   "files.eol": "\n",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  // "typescript.tsdk": "node_modules/typescript/lib",
-  // "tslint.autoFixOnSave": true,
-  // "tslint.configFile": "client/tslint.json",
   "[plaintext]": {
     "files.insertFinalNewline": false
   },
   "commentTranslate.targetLanguage": "zh-CN",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["defaultify"]
+  "cSpell.words": ["defaultify"],
+  "path-intellisense.mappings": {
+    // 别名自动联想功能
+    "@": "${workspaceRoot}/src"
+  },
+  "alias-skip.mappings": {
+    // 缓兵之计
+    "@": "/src", // 默认只有`@`映射，映射到`/src`，你可以添加更多映射，映射路径必须以`/`开头
+    "components": ["/src/components"],
+    "assets": ["/src/assets"]
+  }
 }
