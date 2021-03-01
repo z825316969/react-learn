@@ -1,4 +1,4 @@
-import React, { Component, createRef } from 'react'
+import React, {Component, createRef} from 'react'
 import FormDemo from './FormDemo'
 
 export default class RefsForm extends Component {
@@ -11,7 +11,7 @@ export default class RefsForm extends Component {
   //   this.myRef.current.style.color = "red"
   // }
 
-  handleSubmit = (event) => {
+  handleSubmit = event => {
     event.preventDefault()
     console.log(this.myRef)
   }
@@ -23,15 +23,11 @@ export default class RefsForm extends Component {
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="">
             Name
-            <input
-              type="file"
-            ></input>
+            <input type="file"></input>
           </label>
-          <input type="submit" value="Submit"/>
+          <input type="submit" value="Submit" />
         </form>
       </div>
     )
   }
 }
-
-

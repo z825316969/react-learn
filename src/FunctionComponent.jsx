@@ -1,12 +1,12 @@
-import React, { useImperativeHandle } from 'react'
+import React, {useImperativeHandle, forwardRef} from 'react'
 import PropTypes from 'prop-types'
 
 function FunComponent(props, ref) {
-  const { title } = props
+  const {title} = props
 
   useImperativeHandle(ref, () => ({
     test: test,
-    obj: this
+    obj: this,
   }))
 
   function test(params) {
@@ -17,7 +17,7 @@ function FunComponent(props, ref) {
   return (
     <div>
       456
-      <div>{ title }</div>
+      <div>{title}</div>
     </div>
   )
 }
@@ -30,4 +30,4 @@ function FunComponent(props, ref) {
 //   title: '撒打飞机拉胯'
 // }
 
-export default React.forwardRef(FunComponent)
+export default forwardRef(FunComponent)

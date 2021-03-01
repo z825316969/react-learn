@@ -14,9 +14,9 @@ export default function TableDemo() {
 
   const [tableData, setTableData] = useState(data)
   const [sortedInfo, setSortedInfo] = useState({})
-  const [columns, setColumns] = useState(calcColums())
+  const [columns, setColumns] = useState(calcColumns())
 
-  function calcColums(sorter = {}) {
+  function calcColumns(sorter = {}) {
     let columns = [
       {
         title: 'Full Name',
@@ -60,7 +60,7 @@ export default function TableDemo() {
   function handleChange(pagination, filters, sorter) {
     // setTableData(filters)
     setSortedInfo(sorter)
-    setColumns(calcColums(sorter))
+    setColumns(calcColumns(sorter))
   }
 
   return (

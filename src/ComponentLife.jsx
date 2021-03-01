@@ -1,12 +1,12 @@
 import React from 'react'
 // import FunComponent from './FunctionComponent'
-import { DatePicker } from 'antd'
+import {DatePicker} from 'antd'
 
-class ComponentLife extends React.Component{
+class ComponentLife extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      count: 10
+      count: 10,
     }
     this.myRef = React.createRef()
   }
@@ -36,24 +36,26 @@ class ComponentLife extends React.Component{
   }
 
   handleChangeCount = () => {
-    this.setState((state, props) => {
-      return {
-        count: state.count + 1
-      }
-    },
+    this.setState(
+      (state, props) => {
+        return {
+          count: state.count + 1,
+        }
+      },
       (state, props) => {
         console.log('state, props', state, props)
-      })
+      },
+    )
   }
 
   render() {
-    return(
+    return (
       <>
         <div>
-        <DatePicker />
+          <DatePicker />
         </div>
         <button onClick={this.handleChangeCount}>增加</button>
-        <span>{ this.state.count }</span>
+        <span>{this.state.count}</span>
         {/* <FunComponent /> */}
       </>
     )
