@@ -4,7 +4,7 @@ import FormDemo from './FormDemo'
 import RefsForm from './RefsForm'
 import HookRefs from './HookRefs'
 import FetchDemo from './FetchDemo'
-import TableDemo from './TableDemo'
+import TableDemo from './TableSrotDemo'
 
 class App extends React.Component {
   constructor(props) {

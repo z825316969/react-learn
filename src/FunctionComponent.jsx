@@ -10,6 +10,7 @@ function FunComponent(props, ref) {
   }))
 
   function test(params) {
+    const test = {a: 1}
     console.log('params :>> ', params)
     console.log(title)
   }
