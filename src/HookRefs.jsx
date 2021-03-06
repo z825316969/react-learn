@@ -1,4 +1,4 @@
-import React, {useState, useEffect, createRef, useRef} from 'react'
+import React, { useState, useEffect, createRef, useRef } from 'react'
 // import FormDemo from './FormDemo'
 import FunctionComponent from '@/FunctionComponent'
 import ClassComponent from './ClassComponent'
@@ -15,7 +15,7 @@ export default function HookRefs(props) {
     <div>
       <button onClick={handleConsole}>13213</button>
       {/* <FormDemo ref={ myRef }/> */}
-      <FunctionComponent title="啦啦啦" ref={myRef} />
+      <FunctionComponent title="啦啦" ref={myRef} />
       {/* <FunctionComponent title='123啦啦' ref={ hookRef }/> */}
     </div>
   )
