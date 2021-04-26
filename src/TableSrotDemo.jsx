@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import {Table} from 'antd'
+import React, { useState, useEffect } from 'react'
+import { Table } from 'antd'
 
 export default function TableDemo() {
   const data = []
@@ -31,7 +31,7 @@ export default function TableDemo() {
           //   return a.key.length > b.key.length
           // }
         },
-        sortOrder: sorter.columnKey === 'key' && sorter.order,
+        // sortOrder: sorter.columnKey === 'key' && sorter.order,
       },
       {
         title: 'Full Name',
@@ -68,7 +68,7 @@ export default function TableDemo() {
       columns={columns}
       dataSource={tableData}
       onChange={handleChange}
-      scroll={{x: 1500}}
+      scroll={{ x: 1500 }}
       pagination={{
         // pageSize: 20,
         pageSizeOptions: ['10', '20', '30', '40'],

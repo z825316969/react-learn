@@ -1,7 +1,12 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
+import queryString from 'query-string'
 
 export class FormDemo extends Component {
   render() {
+    console.log('this.props :>> ', this.props)
+    console.log('this.props :>> ', queryString.parse(this.props.location.search))
+    console.log('window.location.search :>> ', window.location)
+    console.log(queryString.parse(window.location.search))
     return (
       <div>
         <form>
