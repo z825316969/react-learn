@@ -1,39 +1,17 @@
-import React, { useState } from 'react'
-import { Radio } from 'antd'
+import React from 'react'
 
 export default function App() {
-  const [test, setTest] = useState(null)
-  let [num, setNum] = useState(0)
+  const [count, setCount] = React.useState(0)
 
-  function log() {
-    // setNum(num + 1)
-    console.log('num :>> ', num)
+  function addOne() {
+    setCount(count + 1)
+    setCount(count + 1)
   }
 
   return (
-    <>
-      <button onClick={log}>add</button>
-      {/* <p>{num}</p> */}
-      <Radio.Group name="radiogroup" defaultValue={1}>
-        <Radio onClick={() => setNum(2)} value={0}>
-          A
-        </Radio>
-        <Radio onClick={() => test.log()} value={2}>
-          B
-        </Radio>
-        <Radio
-          onClick={() =>
-            setTest(data => ({
-              num: 2,
-              log,
-            }))
-          }
-          value={3}
-        >
-          C
-        </Radio>
-        <Radio value={4}>D</Radio>
-      </Radio.Group>
-    </>
+    <div>
+      <h1>Count: {count}</h1> {/* 1 (as we expect) */}
+      <button onClick={addOne}>+ 1</button>
+    </div>
   )
 }
