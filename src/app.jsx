@@ -1,4 +1,7 @@
 import React from 'react'
+import { HashRouter as Router, Link, Route } from 'react-router-dom'
+
+import './app.scss'
 import ComponentLife from './ComponentLife'
 import FormDemo from './FormDemo'
 import RefsForm from './RefsForm'
@@ -7,14 +10,14 @@ import FetchDemo from './FetchDemo'
 import TableDemo from './TableSrotDemo'
 import TableSorter from './TableSorter'
 import RadioDemo from './RadioDemo'
-import { HashRouter as Router, Link, Route } from 'react-router-dom'
+import Formilyjs from './Formilyjs'
 
 class App extends React.Component {
   render() {
     return (
       <>
         <Router>
-          <ul>
+          <ul className="list">
             <li>
               <Link to="/">ComponentLife</Link>
             </li>
@@ -39,6 +42,9 @@ class App extends React.Component {
             <li>
               <Link to="/RadioDemo">RadioDemo</Link>
             </li>
+            <li>
+              <Link to="/Formilyjs">Formilyjs</Link>
+            </li>
           </ul>
           <Route exact path="/" component={ComponentLife} />
           <Route path="/FormDemo" component={FormDemo} />
@@ -48,6 +54,7 @@ class App extends React.Component {
           <Route path="/TableDemo" component={TableDemo} />
           <Route path="/TableSorter" component={TableSorter} />
           <Route path="/RadioDemo" component={RadioDemo} />
+          <Route path="/Formilyjs" component={Formilyjs} />
         </Router>
       </>
     )

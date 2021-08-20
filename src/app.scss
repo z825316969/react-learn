@@ -1,0 +1,9 @@
+.list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 20px;
+  li + li {
+    margin-left: 10px;
+  }
+}

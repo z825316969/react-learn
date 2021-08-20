@@ -10,7 +10,7 @@
   },
   "commentTranslate.targetLanguage": "zh-CN",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": ["defaultify"],
+  "cSpell.words": ["defaultify", "formilyjs"],
   "path-intellisense.mappings": {
     // 别名自动联想功能
     "@": "${workspaceRoot}/src"
