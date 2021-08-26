@@ -11,6 +11,7 @@ import TableDemo from './TableSrotDemo'
 import TableSorter from './TableSorter'
 import RadioDemo from './RadioDemo'
 import Formilyjs from './Formilyjs'
+import ProTable from './ProTable'
 
 class App extends React.Component {
   render() {
@@ -45,6 +46,9 @@ class App extends React.Component {
             <li>
               <Link to="/Formilyjs">Formilyjs</Link>
             </li>
+            <li>
+              <Link to="/ProTable">ProTable</Link>
+            </li>
           </ul>
           <Route exact path="/" component={ComponentLife} />
           <Route path="/FormDemo" component={FormDemo} />
@@ -55,6 +59,7 @@ class App extends React.Component {
           <Route path="/TableSorter" component={TableSorter} />
           <Route path="/RadioDemo" component={RadioDemo} />
           <Route path="/Formilyjs" component={Formilyjs} />
+          <Route path="/ProTable" component={ProTable} />
         </Router>
       </>
     )

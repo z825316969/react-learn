@@ -9,6 +9,7 @@
     "test": "node scripts/test.js"
   },
   "dependencies": {
+    "@ant-design/pro-table": "^2.50.0",
     "@babel/core": "7.12.3",
     "@formily/antd": "^2.0.0-rc.3",
     "@formily/core": "^2.0.0-rc.3",
