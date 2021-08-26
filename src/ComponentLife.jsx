@@ -1,6 +1,6 @@
 import React from 'react'
 // import FunComponent from './FunctionComponent'
-import {DatePicker} from 'antd'
+import { DatePicker } from 'antd'
 
 class ComponentLife extends React.Component {
   constructor(props) {
@@ -11,9 +11,12 @@ class ComponentLife extends React.Component {
     this.myRef = React.createRef()
   }
 
-  // static getDerivedStateFromProps(props, state) {
-  //   console.log('props, state :>> ', props, state)
-  // }
+  static getDerivedStateFromProps(props, state) {
+    console.log('props, state :>> ', props, state)
+    return {
+      a: 2,
+    }
+  }
 
   componentDidMount() {
     console.log('组件渲染完成执行')
@@ -29,6 +32,12 @@ class ComponentLife extends React.Component {
     // if (this.state.count < 15) {
     //   this.handleChangeCount()
     // }
+  }
+
+  getSnapshotBeforeUpdate() {
+    return {
+      b: 2,
+    }
   }
 
   componentWillUnmount() {

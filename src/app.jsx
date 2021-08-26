@@ -14,10 +14,29 @@ import Formilyjs from './Formilyjs'
 import ProTable from './ProTable'
 
 class App extends React.Component {
+  // constructor() {
+  //   this.state = {
+  //     time: 0,
+  //   }
+  // }
+  state = {
+    time: 0,
+  }
+
+  handleChangeTime = () => {
+    this.setState({
+      time: new Date().getTime(),
+    })
+  }
+
   render() {
+    const { time } = this.state
+    console.log('this :>> ', this)
     return (
       <>
         <Router>
+          <button onClick={this.handleChangeTime}>点我更新props</button>
+          {time}
           <ul className="list">
             <li>
               <Link to="/">ComponentLife</Link>
